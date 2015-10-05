@@ -6,7 +6,7 @@ if (isset($_SESSION['UserId'])) {
   $UserId = $_SESSION['UserId'];
   $username = $_SESSION['username'];
 } else {
-  header('Location: LoggedOut.html');
+  header('Location: LoggedOut.php');
   die();
 }
 
@@ -38,7 +38,7 @@ if (isset($_SESSION['UserId'])) {
 
           <div class="collapse navbar-collapse" id="mainNavBar">
             <ul class="nav navbar-nav">
-              <li><a href="loggedinhome.php">Home</a></li>
+              <li><a class="active" href="#">Home</a></li>
               <li><a href="#">About Me</a></li>
               <li><a href="#">Downloads</a></li>
               </ul>
@@ -48,7 +48,7 @@ if (isset($_SESSION['UserId'])) {
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Profile <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a class="active" href="#">Me</a></li>
+                      <li><a href="LoggedIn.php">Me</a></li>
                       <li><a href="#">Activity</a></li>
                       <li><a href="#">Notifications</a></li>
                       <li><a href="#">Account Settings</a></li>
@@ -92,14 +92,10 @@ if (isset($_SESSION['UserId'])) {
 
   <!-- Main Content -->
 
-    <div class="container">
+  <div class="container">
 
-      <h1>Welcome, <?php echo $username ?></h1>
-
-
-    </div>
-
-
+    <div class="alert alert-info fade in">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Welcome To The Official Creeper Gaming Website! Remember To Login Or Create An Account Today For Free!
   <!-- Main Content -->
 
 

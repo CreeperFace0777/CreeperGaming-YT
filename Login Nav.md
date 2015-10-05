@@ -38,7 +38,7 @@ if (isset($_SESSION['UserId'])) {
 
           <div class="collapse navbar-collapse" id="mainNavBar">
             <ul class="nav navbar-nav">
-              <li><a href="loggedinhome.php">Home</a></li>
+              <li><a href="#">Home</a></li>
               <li><a href="#">About Me</a></li>
               <li><a href="#">Downloads</a></li>
               </ul>
@@ -92,12 +92,7 @@ if (isset($_SESSION['UserId'])) {
 
   <!-- Main Content -->
 
-    <div class="container">
-
-      <h1>Welcome, <?php echo $username ?></h1>
-
-
-    </div>
+  <div class="container">
 
 
   <!-- Main Content -->
